@@ -159,6 +159,18 @@ footer a {
   padding: 1rem;
 }
 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
 span {
   display: inline-flex;
   z-index: 2;
