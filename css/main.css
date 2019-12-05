@@ -190,7 +190,7 @@ span {
   top: 4rem;
   position: relative;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -208,7 +208,7 @@ span {
   margin-left: 0;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 38em) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
