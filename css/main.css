@@ -40,12 +40,19 @@ header {
 }
 
 h1 {
+  background-color: #3b1b23;
+  border-radius: .2rem;
+  max-width: 95%;
+  z-index: 1;
+  display: inline-block;
+  top: 3rem;
+  left: 2rem;
   position: absolute;
-  left: 0;
   text-align: center;
-  font-size: 4rem;
-  margin: 0;
-  padding: 1em;
+  font-size: 2rem;
+  width: 80%;
+  margin-top: 2rem;
+  transform: translateX(5%);
 }
 
 .image-overlay {
@@ -54,39 +61,31 @@ h1 {
 }
 
 .banner {
-  z-index: -1;
   width: 100%;
   display: inline-block;
-  max-height: 500px;
+  overflow: hidden;
+  max-height: 15rem;
   position: relative;
 }
 
 ul {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin: 0;
 }
 
 a {
-  padding: 1rem 2.4rem;
+  padding: .5rem;
   margin: auto;
   color: #000;
   text-decoration: none;
 }
 
-ol {
+li {
   list-style-type: none;
-  text-align: center;
-  padding: 0;
-}
-
-.links li {
-  width: 33.33%;
-  margin: 0;
-  padding: 1rem 0;
+  display: inline-block;
 }
 
 header a:hover {
@@ -102,40 +101,35 @@ header a:hover {
 }
 
 h2 {
-  width: 100%;
-  display: inline-block;
   margin-top: .5rem;
   margin-bottom: 1rem;
   text-align: left;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #e6e6e6;
 }
 
 p {
   color: #e6e6e6;
-  display: inline-block;
   margin-top: 1rem;
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.5;
 }
 
 .first-section-img {
-  position: relative;
-  top: 50%;
-  left: 50%;
+  display: block;
+  width: 100%;
 }
 
 .second-section {
   display: block;
-  padding: 0 .5rem;
-  border: solid 1px #000;
 }
 
 footer {
   background-color: #e6e6e6;
 }
+
 footer p, h3, nav {
   color: #a63f38;
   display: block;
@@ -151,84 +145,204 @@ footer h3 {
 }
 
 footer img {
-  width: 40px;
+  width: 2rem;
   margin: 1rem 0;
 }
+
+ footer nav {
+   background-color: #e6e6e6;
+ }
 
 footer a {
   padding: 1rem;
 }
 
-<span style="font-size:2rem;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+a {
+  color: #fff;
+}
+label {
+  background-color: #3b1b23;
+  cursor: pointer;
+  border-radius: .3rem
 }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-
-span {
-  display: inline-flex;
+label {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: .2rem;
   z-index: 2;
-  padding: 1rem;
+  height: 1.5rem;
+  width: 8rem;
+  margin-top: .5rem;
+  display: inline-block;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  opacity: 90%;
-  overflow-x: hidden;
-  transition: 0.5s;
+#menu-toggle {
+  display: none;
 }
 
-.sidenav a {
-  padding-left: 4rem;
-  top: 4rem;
-  position: relative;
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+#menu {
+  font-size: 1.1rem;
+  z-index: 2;
+  background-color: #000;
+  overflow: hidden;
+  max-height: 0;
+  max-width: 6rem;
+  padding: 0;
+  -webkit-transition: all 0.5s ease;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
+#menu-toggle:checked + #menu {
+  max-height: 7.5rem;
   position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 1.5rem;
-  margin-left: 0;
+  left: 8.1rem;
+  bottom: -4.9rem;
 }
 
-@media screen and (max-height: 38em) {
-  .sidenav {padding-top: .5rem;}
-  .sidenav a {font-size: .5rem;}
+@media only screen and (min-width: 38em) {
+/* 608 */
+
+  html {
+    line-height: 1.4;
+    font-size: 110%;
+  }
+
+  /* h1 {
+    position: relative;
+    left: 9rem;
+    flex-direction: row;
+  } */
+
+  .first-section {
+  position: absolute;
+  top: 14rem;
+  padding: 2rem;
+  display: block;
+  }
+
+  .second-section {
+    position: relative;
+    top: 11rem;
+  }
+
+  .second-section h2, .second-section p {
+    max-width: 100%;
+    position: relative;
+    }
+
+ footer {
+   position: relative;
+   top: 11rem;
+ }
+
+ .icon-list {
+   position: relative;
+   top: 0;
+   left: 0;
+ }
+
+ footer p, h3, nav {
+   color: #a63f38;
+   display: block;
+   text-align: center;
+ }
+
 }
 
 @media only screen and (min-width: 40em) {
+/* 608 */
 
-  h1 {
-    position: relative;
-    left: 4rem;
-    flex-direction: row;
+  label {
+    display: none;
   }
 
-  .banner {
+  ul {
+     background-color: #000
+  }
+
+  nav {
+    background-color: #000;
     position: absolute;
+    top: 3%;
+    left: 5%;
+    margin: 0 9rem;
+    font-size: 1rem;
+    overflow: visible;
   }
 
-/* @media only screen and (min-width: 60em)
+  #menu {
+    width: 100%;
+  }
 
-@media only screen and (min-width: 90em) */
+}
+
+@media only screen and (min-width: 45em) {
+/* 960 */
+
+  html {
+    line-height: 1.5;
+    font-size: 120%;
+  }
+
+  nav {
+    font-size: .9rem;
+    left: 7rem;
+  }
+
+  .first-section-img {
+    width: 53%;
+  }
+
+  .section-section {
+    padding: 0;
+    position: absolute;
+    top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .second-section h2, .second-section p{
+    max-width: 50%;
+    left: 24rem;
+    bottom: 17rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+  html {
+    line-height: 1.5;
+    font-size: 130%;
+  }
+
+  nav {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  html {
+    line-height: 1.5;
+    font-size: 130%;
+  }
+
+  nav {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  html {
+    line-height: 1.5;
+    font-size: 130%;
+  }
+
+ h1 {
+   left: 3rem;
+ }
+
+  nav {
+    font-size: 1.2rem;
+  }
+}
