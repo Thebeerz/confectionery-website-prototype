@@ -149,9 +149,9 @@ footer img {
   margin: 1rem 0;
 }
 
- footer nav {
-   background-color: #e6e6e6;
- }
+footer nav {
+  background-color: #e6e6e6;
+}
 
 footer a {
   padding: 1rem;
@@ -183,7 +183,7 @@ label {
   max-height: 0;
   max-width: 6rem;
   padding: 0;
-  -webkit-transition: all 0.5s ease;
+  -webkit-transition: all .5s ease;
 }
 
 #menu-toggle:checked + #menu {
@@ -194,7 +194,7 @@ label {
 }
 
 @media only screen and (min-width: 38em) {
-/* 608 */
+  /* 608 */
 
   html {
     line-height: 1.4;
@@ -208,10 +208,10 @@ label {
   } */
 
   .first-section {
-  position: absolute;
-  top: 14rem;
-  padding: 2rem;
-  display: block;
+    position: absolute;
+    top: 14rem;
+    padding: 2rem;
+    display: block;
   }
 
   .second-section {
@@ -222,36 +222,36 @@ label {
   .second-section h2, .second-section p {
     max-width: 100%;
     position: relative;
-    }
+  }
 
- footer {
-   position: relative;
-   top: 11rem;
- }
+  footer {
+    position: relative;
+    top: 11rem;
+  }
 
- .icon-list {
-   position: relative;
-   top: 0;
-   left: 0;
- }
+  .icon-list {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 
- footer p, h3, nav {
-   color: #a63f38;
-   display: block;
-   text-align: center;
- }
+  footer p, h3, nav {
+    color: #a63f38;
+    display: block;
+    text-align: center;
+  }
 
 }
 
 @media only screen and (min-width: 40em) {
-/* 608 */
+  /* 608 */
 
   label {
     display: none;
   }
 
   ul {
-     background-color: #000
+    background-color: #000;
   }
 
   nav {
@@ -271,7 +271,7 @@ label {
 }
 
 @media only screen and (min-width: 45em) {
-/* 960 */
+  /* 960 */
 
   html {
     line-height: 1.5;
@@ -296,7 +296,7 @@ label {
     flex-direction: column;
   }
 
-  .second-section h2, .second-section p{
+  .second-section h2, .second-section p {
     max-width: 50%;
     left: 24rem;
     bottom: 17rem;
@@ -305,6 +305,7 @@ label {
 }
 
 @media only screen and (min-width: 60em) {
+
   html {
     line-height: 1.5;
     font-size: 120%;
@@ -313,9 +314,11 @@ label {
   nav {
     font-size: 1.2rem;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
+
   html {
     line-height: 1.5;
     font-size: 120%;
@@ -324,9 +327,11 @@ label {
   nav {
     font-size: 1.2rem;
   }
+
 }
 
 @media only screen and (min-width: 90em) {
+
   html {
     line-height: 1.5;
     font-size: 130%;
@@ -339,4 +344,5 @@ label {
   nav {
     font-size: 1.2rem;
   }
+
 }
