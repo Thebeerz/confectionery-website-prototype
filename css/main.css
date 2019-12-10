@@ -79,7 +79,7 @@ ul {
 a {
   padding: .5rem;
   margin: auto;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -155,10 +155,6 @@ footer img {
 
 footer a {
   padding: 1rem;
-}
-
-a {
-  color: #fff;
 }
 
 .nav {
