@@ -157,16 +157,10 @@ footer a {
   padding: 1rem;
 }
 
-a {
-  color: #fff;
-}
 label {
   background-color: #3b1b23;
   cursor: pointer;
-  border-radius: .3rem
-}
-
-label {
+  border-radius: .3rem;
   font-size: 1rem;
   text-align: center;
   padding-top: .2rem;
@@ -313,7 +307,7 @@ label {
 @media only screen and (min-width: 60em) {
   html {
     line-height: 1.5;
-    font-size: 130%;
+    font-size: 120%;
   }
 
   nav {
@@ -324,7 +318,7 @@ label {
 @media only screen and (min-width: 60em) {
   html {
     line-height: 1.5;
-    font-size: 130%;
+    font-size: 120%;
   }
 
   nav {
@@ -332,7 +326,7 @@ label {
   }
 }
 
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 90em) {
   html {
     line-height: 1.5;
     font-size: 130%;
