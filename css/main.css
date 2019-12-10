@@ -190,12 +190,12 @@ label {
   overflow: hidden;
   max-height: 0;
   position: absolute;
-  left: 0.5rem;
+  left: .5rem;
   bottom: 0rem;
   max-width: 7rem;
   height: 15rem;
   padding: 0 1rem;
-  -webkit-transition: all 0.5s ease;
+  -webkit-transition: all .5s ease;
 }
 
 #menu li {
