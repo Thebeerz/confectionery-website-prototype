@@ -92,8 +92,13 @@ li {
   display: inline-block;
 }
 
-a:hover {
+li a:hover {
   background-color: #3b1b23;
+  color: #fff;
+}
+
+.icon-list a:hover {
+  background-color: red;
 }
 
 .first-section {
@@ -179,7 +184,7 @@ label {
 }
 
 #menu li {
-width: 200%;
+  width: 200%;
 }
 
 #menu {
