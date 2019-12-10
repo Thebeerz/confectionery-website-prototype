@@ -332,14 +332,9 @@ label {
 
 @media only screen and (min-width: 90em) {
 
-  html {
-    line-height: 1.5;
-    font-size: 130%;
+  h1 {
+    left: 3rem;
   }
-
- h1 {
-   left: 3rem;
- }
 
   nav {
     font-size: 1.2rem;
