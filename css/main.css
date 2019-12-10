@@ -69,17 +69,21 @@ h1 {
 }
 
 ul {
-  display: block;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
   align-items: center;
   justify-content: space-around;
   font-size: 1rem;
-  margin: 0;
+}
+
+#menu ul {
+  max-width: 50%;
 }
 
 a {
-  padding: .5rem;
-  margin: auto;
-  color: #000;
+  display: block;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -88,7 +92,7 @@ li {
   display: inline-block;
 }
 
-header a:hover {
+a:hover {
   background-color: #3b1b23;
 }
 
@@ -174,6 +178,10 @@ label {
   display: none;
 }
 
+#menu li {
+width: 200%;
+}
+
 #menu {
   font-size: 1.1rem;
   z-index: 2;
@@ -182,6 +190,7 @@ label {
   max-height: 0;
   max-width: 6rem;
   padding: 0;
+  margin: 0;
   -webkit-transition: all .5s ease;
 }
 
@@ -189,7 +198,6 @@ label {
   max-height: 7.5rem;
   position: absolute;
   left: 8.1rem;
-  bottom: -4.9rem;
 }
 
 @media only screen and (min-width: 38em) {
