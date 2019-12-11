@@ -53,9 +53,10 @@ h1 {
   margin-top: 2rem;
   transform: translateX(5%);
 }
-  .first-section-img {
-    display: none;
-  }
+
+.first-section-img {
+  display: none;
+}
 
 .image-overlay {
   display: block;
@@ -151,9 +152,9 @@ footer img {
   margin: 1rem 0;
 }
 
- footer nav {
-   background-color: #e6e6e6;
- }
+footer nav {
+  background-color: #e6e6e6;
+}
 
 footer a {
   padding: 1rem;
@@ -189,7 +190,7 @@ label {
   max-height: 0;
   position: absolute;
   left: .5rem;
-  bottom: 0rem;
+  bottom: 0;
   max-width: 7rem;
   height: 15rem;
   padding: 0 1rem;
@@ -203,33 +204,35 @@ label {
 #menu-toggle:checked + #menu {
   max-height: 11.5rem;
   position: absolute;
-  left: 0.3rem;
+  left: .3rem;
   bottom: -12rem;
 }
 
 @media only screen and (min-width: 38em) {
-/* 608 */
+  /* 608 */
 
   html {
     line-height: 1.4;
     font-size: 110%;
   }
 
- footer p, h3, nav {
-   color: #a63f38;
-   display: block;
-   text-align: center;
- }
+  footer p, h3, nav {
+    color: #a63f38;
+    display: block;
+    text-align: center;
+  }
+
+}
 
 @media only screen and (min-width: 40em) {
-/* 608 */
+  /* 608 */
 
   label {
     display: none;
   }
 
   .nav {
-     background-color: #000
+    background-color: #000;
   }
 
   #menu {
@@ -240,7 +243,7 @@ label {
 }
 
 @media only screen and (min-width: 45em) {
-/* 960 */
+  /* 960 */
 
   html {
     line-height: 1.4;
@@ -276,7 +279,7 @@ label {
     flex-wrap: wrap;
   }
 
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
 
@@ -293,8 +296,6 @@ label {
     left: 24rem;
     bottom: 5rem;
   } */
-
-}
 
 /* @media only screen and (min-width: 50em) {
 
@@ -347,7 +348,6 @@ label {
 @media only screen and (min-width: 90em) {
 
   html {
-    line-height: 1.5;
     font-size: 130%;
   }
 
