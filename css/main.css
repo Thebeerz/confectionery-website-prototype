@@ -21,7 +21,6 @@ html {
 }
 
 body {
-  z-index: -4;
   margin: 0;
 }
 
@@ -54,6 +53,9 @@ h1 {
   margin-top: 2rem;
   transform: translateX(5%);
 }
+  .first-section-img {
+    display: none;
+  }
 
 .image-overlay {
   display: block;
@@ -117,7 +119,7 @@ p {
   line-height: 1.5;
 }
 
-.first-section-img {
+.second-section-img {
   display: block;
   width: 100%;
 }
@@ -168,7 +170,7 @@ label {
   font-size: 1rem;
   text-align: center;
   padding-top: .2rem;
-  z-index: 2;
+  z-index: 1;
   height: 1.5rem;
   width: 8rem;
   margin-top: .5rem;
@@ -181,7 +183,7 @@ label {
 
 #menu {
   font-size: 1.1rem;
-  z-index: 2;
+  z-index: 1;
   background-color: #000;
   overflow: hidden;
   max-height: 0;
@@ -213,50 +215,6 @@ label {
     font-size: 110%;
   }
 
-  /* h1 {
-    position: relative;
-    left: 9rem;
-    flex-direction: row;
-  } */
-
-  .first-section {
-  position: absolute;
-  top: 14rem;
-  padding: 2rem;
-  display: block;
-  }
-
-  /* .first-section-img {
-    position: relative;
-    top: 12rem;
-  } */
-
-  /* .second-section-img {
-    max-width: 40%;
-  } */
-
-  .second-section {
-    position: relative;
-    top: 27rem;
-  }
-
-  .second-section h2, .second-section p{
-    max-width: 100%;
-    position: relative;
-    }
-  }
-
- footer {
-   position: relative;
-   top: 11rem;
- }
-
- .icon-list {
-   position: relative;
-   top: 0;
-   left: 0;
- }
-
  footer p, h3, nav {
    color: #a63f38;
    display: block;
@@ -270,7 +228,7 @@ label {
     display: none;
   }
 
-  ul {
+  .nav {
      background-color: #000
   }
 
@@ -285,8 +243,8 @@ label {
 /* 960 */
 
   html {
-    line-height: 1.5;
-    font-size: 120%;
+    line-height: 1.4;
+    font-size: 110%;
   }
 
   nav {
@@ -294,30 +252,100 @@ label {
     left: 7rem;
   }
 
-  .first-section-img {
+  .img {
+    padding: 2rem;
+    display: block;
     width: 62%;
   }
 
-  .section-section {
+  .card-title {
+    display: block;
+    padding: .5rem;
+  }
+
+  .first-section {
     padding: 0;
-    position: absolute;
-    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .second-section {
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+}
+
+  /* .second-section h2, .second-section p{
+    max-width: 36%;
+    position: relative;
+    font-size: 1rem;
+    left: 24rem;
+    bottom: 5rem;
+  } */
+
+}
+
+/* @media only screen and (min-width: 50em) {
+
+  .first-section-img {
+    display: block;
+    width: 62%;
+    position: relative;
+    top: 3rem;
+  }
+
+  .first-section h2, .first-section p{
+    position: absolute;
+    bottom:-1rem;
+    left: 24rem;
+    display: block;
+    max-width: 36%;
+    font-size: 1rem;
+  }
+
+  .second-section-img {
+    width: 62%;
+    bottom: 1rem;
+    position: relative;
+    top: 9rem;
   }
 
   .second-section h2, .second-section p{
-    max-width: 50%;
+    max-width: 36%;
+    position: relative;
+    font-size: 1rem;
     left: 24rem;
-    bottom: 17rem;
+    bottom: 5rem;
+  }
+
+} */
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    line-height: 1.5;
+    font-size: 120%;
+  }
+
+  nav {
+    font-size: 1.2rem;
   }
 
 }
 
+@media only screen and (min-width: 90em) {
 
-
-@media only screen and (min-width: 60em) {
   html {
     line-height: 1.5;
     font-size: 130%;
@@ -326,20 +354,11 @@ label {
   nav {
     font-size: 1.2rem;
   }
+
 }
 
-@media only screen and (min-width: 60em) {
-  html {
-    line-height: 1.5;
-    font-size: 130%;
-  }
+/* @media only screen and (min-width: 80em) {
 
-  nav {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 80em) {
   html {
     line-height: 1.5;
     font-size: 130%;
@@ -352,4 +371,4 @@ label {
   nav {
     font-size: 1.2rem;
   }
-}
+} */
