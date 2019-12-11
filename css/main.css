@@ -96,11 +96,14 @@ header a:hover {
   background-color: #3b1b23;
 }
 
+footer li:hover {
+  background-color: #a63f38;
+}
+
 .first-section {
   width: 100%;
   color: #000;
   display: block;
-  padding: 0 0 .5rem;
 }
 
 h2 {
@@ -250,33 +253,19 @@ label {
     font-size: 110%;
   }
 
-  nav {
-    font-size: .9rem;
-    left: 7rem;
-  }
-
   .img {
-    padding: 2rem;
+    padding: 1rem;
     display: block;
     width: 62%;
   }
 
   .card-title {
     display: block;
-    padding: .5rem;
+    padding: 2rem 1rem;
   }
 
-  .first-section {
-    padding: 0;
+  .first-section, .second-section {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .second-section {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   h2 {
@@ -288,49 +277,6 @@ label {
   }
 
 }
-
-/* .second-section h2, .second-section p{
-    max-width: 36%;
-    position: relative;
-    font-size: 1rem;
-    left: 24rem;
-    bottom: 5rem;
-  } */
-
-/* @media only screen and (min-width: 50em) {
-
-  .first-section-img {
-    display: block;
-    width: 62%;
-    position: relative;
-    top: 3rem;
-  }
-
-  .first-section h2, .first-section p{
-    position: absolute;
-    bottom:-1rem;
-    left: 24rem;
-    display: block;
-    max-width: 36%;
-    font-size: 1rem;
-  }
-
-  .second-section-img {
-    width: 62%;
-    bottom: 1rem;
-    position: relative;
-    top: 9rem;
-  }
-
-  .second-section h2, .second-section p{
-    max-width: 36%;
-    position: relative;
-    font-size: 1rem;
-    left: 24rem;
-    bottom: 5rem;
-  }
-
-} */
 
 @media only screen and (min-width: 60em) {
 
@@ -356,19 +302,3 @@ label {
   }
 
 }
-
-/* @media only screen and (min-width: 80em) {
-
-  html {
-    line-height: 1.5;
-    font-size: 130%;
-  }
-
- h1 {
-   left: 3rem;
- }
-
-  nav {
-    font-size: 1.2rem;
-  }
-} */
